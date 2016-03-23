@@ -1,6 +1,11 @@
-var coffees = [
-    {id: 1000000, coffeename: 'Mocha', coffeeshop:'Starbucks', coffeeprice: 1.99,  upvotes: 1},
-    {id: 1000001, coffeename: 'Cappacino', coffeeshop: 'Costa', coffeeprice: 2.50,  upvotes: 2}
-];
+var mongoose = require('mongoose');
 
-module.exports = coffees;
+var CoffeeSchema = new mongoose.Schema({
+    coffeename: String,
+    coffeeshop: String,
+    coffeeprice: Number,
+    upvotes: {type: Number, default: 0}
+});
+
+module.exports = mongoose.model('Coffee', CoffeeSchema);
+

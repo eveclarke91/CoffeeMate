@@ -1,40 +1,60 @@
-var coffees = require('../models/coffees');
+var Coffee = require('../models/coffees');
 var express = require('express');
 var router = express.Router();
+var mongoose = require('mongoose');
+
+
+mongoose.connect('mongodb://localhost:27017/coffeesdb');
+
+var db = mongoose.connection;
+
+db.on('error', function (err) {
+    console.log('connection error', err);
+});
+db.once('open', function () {
+    console.log('connected to database');
+});
+
 
 router.findAll = function(req, res) {
-    // Return a JSON representation of our list
-    res.json(coffees);
+    // Use the Coffee model to find all coffeea
+    Coffee.find(function(err, coffees) {
+        if (err)
+            res.send(err);
+
+        res.json(coffees);
+    });
 }
 
 router.addCoffee = function(req, res) {
-    //Add a new coffee to our list
-    var id = Math.floor((Math.random() * 1000000) + 1); //Randomly generate an id
-    // parameters to store
-    // id (for id)
-    // req.body.paymenttype (for paymenttype)
-    // req.body.amount (for amount)
-    // 0 (for upvotes)
-    var currentSize = coffees.length;
 
-    coffees.push({id: id, coffeename: req.body.coffeename, coffeeshop: req.body.coffeeshop, coffeeprice: req.body.coffeeprice,  upvotes: 0});
+    var coffee = new Coffee();
 
+    coffee.coffeename = req.body.coffeename;
+    coffee.coffeeshop = req.body.coffeeshop;
+    coffee.coffeeprice = req.body.coffeeprice;
 
-    if((currentSize + 1) == coffees.length)
-        res.json({ message: 'Coffee Added!'});
-    else
-        res.json({ message: 'Coffee NOT Added!'});
+    console.log('Adding coffee: ' + JSON.stringify(coffee));
+
+    // Save the coffee and check for errors
+    coffee.save(function(err) {
+        if (err)
+            res.send(err);
+
+        res.json({ message: 'Coffee Added!', data: coffee });
+    });
 }
 
 
 router.findOne = function(req, res) {
 
-    var coffee = getByValue(coffees,req.params.id);
-
-    if(coffee != null)
-        res.json(coffee);
-    else
-        res.json({ message: 'Coffee NOT Found!'});
+    // Use the Coffee model to find a single coffee
+    Coffee.find({ "_id" : req.params.id },function(err, coffee) {
+        if (err)
+            res.json({ message: 'Coffee NOT Found!', errmsg : err } );
+        else
+            res.json(coffee);
+    });
 }
 
 function getByValue(arr, id) {
@@ -45,23 +65,29 @@ function getByValue(arr, id) {
 }
 
 router.incrementUpvotes = function(req, res) {
-    //Add 1 to upvotes property of the selected coffee based on its id
-    var coffee = getByValue(coffees,req.params.id);
-    coffee.upvotes += 1;
+
+    Coffee.findById(req.params.id, function(err,coffee) {
+        if (err)
+            res.send(err);
+        else {
+            coffee.upvotes += 1;
+            coffee.save(function (err) {
+                if (err)
+                    res.send(err);
+                else
+                    res.json({ message: 'Coffee Upvoted!', data: coffee });
+            });
+        }
+    });
 }
-
 router.deleteCoffee = function(req, res) {
-    //Delete the selected coffee based on its id
-    var coffee = getByValue(coffees,req.params.id);
-    var index = coffees.indexOf(coffee);
 
-    var currentSize = coffees.length;
-    coffees.splice(index, 1);
-
-    if((currentSize - 1) == coffees.length)
-        res.json({ message: 'Coffee Deleted!'});
-    else
-        res.json({ message: 'Coffee NOT Deleted!'});
+    Coffee.findByIdAndRemove(req.params.id, function(err) {
+        if (err)
+            res.send(err);
+        else
+            res.json({ message: 'Coffee Deleted!'});
+    });
 }
 
 module.exports = router;
