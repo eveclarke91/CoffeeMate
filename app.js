@@ -31,6 +31,8 @@ app.get('/coffees/:id', coffees.findOne);
 app.post('/coffees', coffees.addCoffee);
 app.put('/coffees/:id/votes',coffees.incrementUpvotes);
 app.delete('/coffees/:id', coffees.deleteCoffee);
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

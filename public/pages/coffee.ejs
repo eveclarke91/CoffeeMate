@@ -1,0 +1,46 @@
+<div class="jumbotron text-center">
+    <h1>Add a Coffee</h1>
+
+    <p>{{ message }}</p>
+
+    <div ng-controller="coffeeController">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <form ng-submit="addCoffee()"
+                      style="margin-top:30px;">
+
+                    <div class="form-group" align="center">
+                        <select ng-model="formData.paymentOptions" class="form-control" ng-show="formData.paymentOptions" ng-options="option.name for option in options" ng-style="{'width': 100 + 'px'}">
+                        </select>
+                    </div>
+                    <div class="form-group" align="center">
+                        <label>Coffee Name</label>
+                        <input type = "text"
+                               class = "form-control"
+                               placeholder = "Name"
+                               ng-model="formData.coffeename"
+                               ng-style="{width: 300 + 'px'}"></input>
+                    </div>
+                    <div class="form-group" align="center">
+                        <label>Coffee Shop</label>
+                        <input type = "text"
+                               class = "form-control"
+                               placeholder = "Shop"
+                               ng-model="formData.coffeeshop"
+                               ng-style="{width: 300 + 'px'}"></input>
+                    </div>
+                    <label>Coffee Price</label>
+                    <div class="form-group" align="center">
+                       <input type="number"
+                               class="form-control"
+                               placeholder="Price"
+                               ng-model="formData.coffeeprice"
+                               ng-style="{'width': 100 + 'px'}"></input>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Coffee</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
