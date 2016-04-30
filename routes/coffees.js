@@ -48,8 +48,8 @@ router.addCoffee = function(req, res) {
 
 router.findOne = function(req, res) {
 
-    // Use the Coffee model to find a single coffee
-    Coffee.find({ "_id" : req.params.id },function(err, coffee) {
+    // Use the Coffee model to find a single coffeezzz
+    Coffee.findById(req.params.id,function(err, coffee) {
         if (err)
             res.json({ message: 'Coffee NOT Found!', errmsg : err } );
         else
@@ -88,6 +88,27 @@ router.deleteCoffee = function(req, res) {
         else
             res.json({ message: 'Coffee Deleted!'});
     });
+}
+
+router.update = function(req, res){
+
+    Coffee.findById(req.body.id, function(err,coffee) {
+        if (err)
+            res.send(err);
+        else {
+            coffee.coffeename = req.body.coffeename;
+            coffee.coffeeshop = req.body.coffeeshop;
+            coffee.coffeeprice = req.body.coffeeprice;
+
+            coffee.save(function (err) {
+                if (err)
+                    res.send(err);
+                else
+                    res.json({ message: 'Coffee Upvoted!', data: coffee });
+            });
+        }
+    });
+
 }
 
 module.exports = router;

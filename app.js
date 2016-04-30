@@ -29,6 +29,7 @@ app.use('/users', users);
 app.get('/coffees', coffees.findAll);
 app.get('/coffees/:id', coffees.findOne);
 app.post('/coffees', coffees.addCoffee);
+app.post('/update', coffees.update);
 app.put('/coffees/:id/votes',coffees.incrementUpvotes);
 app.delete('/coffees/:id', coffees.deleteCoffee);
 

@@ -29,8 +29,27 @@ app.config(function($routeProvider) {
             .when('/coffees', {
                 templateUrl : 'pages/coffees.ejs',
                 controller  : 'coffeesController'
+            })
+
+            .when('/coffees/:id', {
+                templateUrl : 'pages/updateCoffee.ejs',
+                controller  : 'updatecoffeeController'
             });
-    });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
