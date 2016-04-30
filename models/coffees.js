@@ -5,6 +5,7 @@ var CoffeeSchema = new mongoose.Schema({
     coffeeshop: String,
     coffeeprice: Number,
     coffeerating: Number,
+    coffeefavourite: Boolean,
     upvotes: {type: Number, default: 0}
 });
 

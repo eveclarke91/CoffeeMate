@@ -1,9 +1,15 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.starrating{
+  color: #D4D4D4;
+}
+.starrating:hover {
+  color: #F4F92F;
 }
 
-a {
-  color: #00B7FF;
+.starpanel{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #aaa;
+  border-radius: 10px;
 }
-

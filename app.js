@@ -31,6 +31,8 @@ app.get('/coffees/:id', coffees.findOne);
 app.post('/coffees', coffees.addCoffee);
 app.post('/update', coffees.update);
 app.put('/coffees/:id/votes',coffees.incrementUpvotes);
+app.put('/coffees/:id/favoff',coffees.favouriteoff);
+app.put('/coffees/:id/favon',coffees.favouriteon);
 app.delete('/coffees/:id', coffees.deleteCoffee);
 
 

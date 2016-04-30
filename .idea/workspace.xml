@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="926bb31a-d0f8-4cbf-b95b-941a6fdb9b64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/controllers/updatecoffeecontroller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/updateCoffee.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/coffees.js" afterPath="$PROJECT_DIR$/models/coffees.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/angularApp.js" afterPath="$PROJECT_DIR$/public/javascripts/angularApp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/controllers/coffeescontroller.js" afterPath="$PROJECT_DIR$/public/javascripts/controllers/coffeescontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/controllers/updatecoffeecontroller.js" afterPath="$PROJECT_DIR$/public/javascripts/controllers/updatecoffeecontroller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/coffee.ejs" afterPath="$PROJECT_DIR$/public/pages/coffee.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/coffees.ejs" afterPath="$PROJECT_DIR$/public/pages/coffees.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/pages/updateCoffee.ejs" afterPath="$PROJECT_DIR$/public/pages/updateCoffee.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/coffees.js" afterPath="$PROJECT_DIR$/routes/coffees.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
@@ -33,14 +33,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <file leaf-file-name="coffees.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/coffees.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.538462">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <element signature="n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,8 +46,18 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.592592">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state vertical-scroll-proportion="-22.037037">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -69,27 +77,7 @@
         <entry file="file://$PROJECT_DIR$/routes/coffees.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updatecoffeecontroller.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/updatecoffeecontroller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3047375">
-              <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateCoffee.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/pages/updateCoffee.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2307692">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -98,9 +86,43 @@
       <file leaf-file-name="coffee.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/pages/coffee.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.923077">
-              <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+            <state vertical-scroll-proportion="-19.576923">
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updatecoffeecontroller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/updatecoffeecontroller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateCoffee.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/pages/updateCoffee.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6463576">
+              <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coffees.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/pages/coffees.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#td#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#4;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,17 +131,7 @@
         <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/coffeescontroller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coffeecontroller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/coffeecontroller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -139,24 +151,24 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/models/coffees.js" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/maincontroller.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/public/pages/home.ejs" />
         <option value="$PROJECT_DIR$/public/pages/about.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/aboutcontroller.js" />
         <option value="$PROJECT_DIR$/public/pages/contact.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/contactcontroller.js" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/coffeecontroller.js" />
-        <option value="$PROJECT_DIR$/public/pages/coffees.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/controllers/coffeescontroller.js" />
         <option value="$PROJECT_DIR$/public/javascripts/controllers/updateController.js" />
         <option value="$PROJECT_DIR$/public/javascripts/angularApp.js" />
+        <option value="$PROJECT_DIR$/models/coffees.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/public/pages/updateCoffee.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/controllers/updatecoffeecontroller.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/controllers/coffeescontroller.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/coffees.js" />
+        <option value="$PROJECT_DIR$/public/pages/coffees.ejs" />
         <option value="$PROJECT_DIR$/public/pages/coffee.ejs" />
-        <option value="$PROJECT_DIR$/models/coffees.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/controllers/updatecoffeecontroller.js" />
+        <option value="$PROJECT_DIR$/public/pages/updateCoffee.ejs" />
       </list>
     </option>
   </component>
@@ -223,6 +235,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="coffeemate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -314,28 +330,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="coffeemate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="coffeemate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1151,7 +1145,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1196,7 +1190,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="101" selection-start-line="14" selection-start-column="101" selection-end-line="14" selection-end-column="101" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#4;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1388,13 +1386,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8867924">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/pages/about.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6153846">
@@ -1416,14 +1407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1439,34 +1422,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/home.ejs">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/coffeecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18013245">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/maincontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1479,18 +1438,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/coffees.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/coffeecontroller.js">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/maincontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1498,33 +1489,15 @@
     <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/coffeescontroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/coffees.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="54" selection-start-line="100" selection-start-column="54" selection-end-line="100" selection-end-column="54" />
+          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.538462">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.592592">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -1539,32 +1512,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/coffees.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2612036">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/coffee.ejs">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.923077">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        <state vertical-scroll-proportion="-22.037037">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/pages/updateCoffee.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/coffees.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2307692">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/controllers/updatecoffeecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3047375">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/coffees.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#4;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/coffee.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.576923">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/updateCoffee.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6463576">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
           <folding />
         </state>
       </provider>

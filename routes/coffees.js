@@ -79,6 +79,41 @@ router.incrementUpvotes = function(req, res) {
             });
         }
     });
+
+}
+router.favouriteoff = function(req, res) {
+
+    Coffee.findById(req.params.id, function(err,coffee) {
+        if (err)
+            res.send(err);
+        else {
+            coffee.coffeefavourite = false;
+            coffee.save(function (err) {
+                if (err)
+                    res.send(err);
+                else
+                    res.json({ message: 'Coffee Upvoted!', data: coffee });
+            });
+        }
+    });
+
+}
+router.favouriteon = function(req, res) {
+
+    Coffee.findById(req.params.id, function(err,coffee) {
+        if (err)
+            res.send(err);
+        else {
+            coffee.coffeefavourite = true;
+            coffee.save(function (err) {
+                if (err)
+                    res.send(err);
+                else
+                    res.json({ message: 'Coffee Upvoted!', data: coffee });
+            });
+        }
+    });
+
 }
 router.deleteCoffee = function(req, res) {
 
@@ -99,12 +134,15 @@ router.update = function(req, res){
             coffee.coffeename = req.body.coffeename;
             coffee.coffeeshop = req.body.coffeeshop;
             coffee.coffeeprice = req.body.coffeeprice;
+            coffee.coffeerating = req.body.coffeerating;
+            coffee.coffeefavourite = req.body.coffeefavourite;
+
 
             coffee.save(function (err) {
                 if (err)
                     res.send(err);
                 else
-                    res.json({ message: 'Coffee Upvoted!', data: coffee });
+                    res.json({ message: 'Coffee Updated!', data: coffee });
             });
         }
     });

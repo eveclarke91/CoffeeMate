@@ -28,6 +28,26 @@ app.controller('coffeesController', ['$scope', '$location', '$http', function($s
                 console.log('Error:' + data);
             });
     };
+    $scope.favouriteoff = function(id){
+        $http.put('/coffees/' + id + '/favoff')
+            .success(function (data){
+                console.log(data);
+                findAll();
+            })
+            .error(function (data){
+                console.log('Error:' + data);
+            });
+    };
+    $scope.favouriteon = function(id){
+        $http.put('/coffees/' + id + '/favon')
+            .success(function (data){
+                console.log(data);
+                findAll();
+            })
+            .error(function (data){
+                console.log('Error:' + data);
+            });
+    };
 
     $scope.update = function(id) {
         $location.path('/coffees/' + id);

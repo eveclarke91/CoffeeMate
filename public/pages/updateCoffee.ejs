@@ -9,6 +9,20 @@
                       style="margin-top:30px;">
 
 
+                    <label>Coffee Favourite</label>
+                    <!-- <div class="form-group" align="center">
+                        <input type="checkbox" data-ng-model="formData.coffeefavourite" />
+                    </div> -->
+                    <div class="form-group" align="center">
+                        <div ng-if="formData.coffeefavourite" ng-click="setfalse()" ng-style="{fontSize: '86px', color: '#4B8CBB'}">
+                            <i class="fa fa-star fa-6" aria-hidden="true"></i>
+                        </div>
+                        <div ng-if="!formData.coffeefavourite">
+                            <i class="fa fa-star fa-6" aria-hidden="true" ng-click="settrue()" ng-style="{fontSize: '86px'}"></i>
+                        </div>
+                    </div>
+
+
                     <div class="form-group" align="center">
                         <label>Coffee Name</label>
                         <input type = "text"
@@ -28,11 +42,38 @@
                     <label>Coffee Price</label>
                     <div class="form-group" align="center">
                         <input type="number"
+                               step="any"
                                class="form-control"
                                placeholder="Price"
                                ng-model="formData.coffeeprice"
                                ng-style="{'width': 100 + 'px'}"></input>
                     </div>
+                    <!-- <label>Coffee Rating</label>
+                    <div class="form-group" align="center">
+                        <input type="number"
+                               class="form-control"
+                               placeholder="Rating"
+                               ng-model="formData.coffeerating"
+                               ng-style="{'width': 100 + 'px'}"></input>
+                    </div> -->
+
+                    <label>Coffee Rating</label>
+                    <div class="form-group" align="center">
+                        <span ng-mouseleave="resetrating()">
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set1()" ng-if="formData.coffeerating >= 1" ng-style="{fontSize:'45px', color: '#F4F92F'}" ng-mouseenter="hoverset1()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set1()" ng-if="formData.coffeerating < 1" ng-style="{fontSize:'45px'}" ng-mouseenter="hoverset1()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set2()" ng-if="formData.coffeerating >= 2" ng-style="{fontSize:'45px', color: '#F4F92F'}" ng-mouseenter="hoverset2()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set2()" ng-if="formData.coffeerating < 2" ng-style="{fontSize:'45px'}" ng-mouseenter="hoverset2()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set3()" ng-if="formData.coffeerating >= 3" ng-style="{fontSize:'45px', color: '#F4F92F'}" ng-mouseenter="hoverset3()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set3()" ng-if="formData.coffeerating < 3" ng-style="{fontSize:'45px'}" ng-mouseenter="hoverset3()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set4()" ng-if="formData.coffeerating >= 4" ng-style="{fontSize:'45px', color: '#F4F92F'}" ng-mouseenter="hoverset4()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set4()" ng-if="formData.coffeerating < 4" ng-style="{fontSize:'45px'}" ng-mouseenter="hoverset4()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set5()" ng-if="formData.coffeerating >= 5" ng-style="{fontSize:'45px', color: '#F4F92F'}" ng-mouseenter="hoverset5()"></i>
+                            <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set5()" ng-if="formData.coffeerating < 5" ng-style="{fontSize:'45px'}" ng-mouseenter="hoverset5()"></i>
+                        </span>
+                    </div>
+
+
                     <input type="hidden" ng-model="formData.id"></input>
                     <button type="submit" class="btn btn-primary">Update Coffee</button>
                 </form>
@@ -40,4 +81,4 @@
             </div>
         </div>
     </div>
-    </div>
+</div>
