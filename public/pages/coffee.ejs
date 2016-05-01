@@ -39,8 +39,18 @@
                                ng-model="formData.coffeeprice"
                                ng-style="{'width': 100 + 'px'}"></input>
                     </div>
+
+                    <div class="form-group" align="center">
+                        <map ng-transclude class="short-map" center='map.center' zoom="17" options="map.options">
+                            <marker position='marker.position' options="marker.options" events="marker.events" decimals="marker.decimals"></marker>
+                        </map>
+                    </div>
+
+
                     <button type="submit" class="btn btn-primary">Add Coffee</button>
                 </form>
+
+
 
             </div>
         </div>

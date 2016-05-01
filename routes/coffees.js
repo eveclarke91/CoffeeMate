@@ -33,6 +33,8 @@ router.addCoffee = function(req, res) {
     coffee.coffeename = req.body.coffeename;
     coffee.coffeeshop = req.body.coffeeshop;
     coffee.coffeeprice = req.body.coffeeprice;
+    coffee.lat = req.body.lat;
+    coffee.lng = req.body.lng;
 
     console.log('Adding coffee: ' + JSON.stringify(coffee));
 
@@ -136,7 +138,8 @@ router.update = function(req, res){
             coffee.coffeeprice = req.body.coffeeprice;
             coffee.coffeerating = req.body.coffeerating;
             coffee.coffeefavourite = req.body.coffeefavourite;
-
+            coffee.lat = req.body.lat;
+            coffee.lng = req.body.lng;
 
             coffee.save(function (err) {
                 if (err)

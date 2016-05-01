@@ -13,3 +13,8 @@
   background-color: #aaa;
   border-radius: 10px;
 }
+
+.short-map {
+  height: 300px;
+  width: 800px;
+}

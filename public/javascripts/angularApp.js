@@ -1,4 +1,4 @@
-var app = angular.module('CoffeeMateWebApp', ['ngRoute']);
+var app = angular.module('CoffeeMateWebApp', ['ngRoute','ngMaps']);
 
 app.config(function($routeProvider) {
         $routeProvider

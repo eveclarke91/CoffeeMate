@@ -48,6 +48,7 @@
                                ng-model="formData.coffeeprice"
                                ng-style="{'width': 100 + 'px'}"></input>
                     </div>
+
                     <!-- <label>Coffee Rating</label>
                     <div class="form-group" align="center">
                         <input type="number"
@@ -71,6 +72,12 @@
                             <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set5()" ng-if="formData.coffeerating >= 5" ng-style="{fontSize:'45px', color: '#F4F92F'}" ng-mouseenter="hoverset5()"></i>
                             <i class="fa fa-star fa-6 starrating" aria-hidden="true" ng-click="set5()" ng-if="formData.coffeerating < 5" ng-style="{fontSize:'45px'}" ng-mouseenter="hoverset5()"></i>
                         </span>
+                    </div>
+
+                    <div class="form-group" align="center">
+                        <map ng-transclude class="short-map" center='map.center' zoom="17" options="map.options" >
+                            <marker position='marker.position' options="marker.options" events="marker.events" decimals="marker.decimals"></marker>
+                        </map>
                     </div>
 
 
